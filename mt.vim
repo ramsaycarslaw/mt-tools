@@ -7,11 +7,13 @@ if exists("b:current_syntax")
     finish
 endif
 
+set nospell
+
 " Keywords
-syn keyword basicLanguageKeywords print var if fn for while else return 
+syn keyword basicLanguageKeywords print var if fn for while else return class this use
 
 " builtins 
-syntax keyword builtinfn input read write clock string number
+syntax keyword builtinfn input read write clock string number init println printf color append delete len clear exit Cd Ls 
 
 " numbers
 " Integer with - + or nothing in front
